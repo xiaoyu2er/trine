@@ -1,0 +1,1 @@
+const e={key:"v-14f8e186",path:"/msis/",title:"MSIS",lang:"zh-CN",frontmatter:{tag:["MSIS"]},excerpt:"",headers:[],git:{createdTime:1652897955e3,updatedTime:1652897955e3,contributors:[{name:"xiaoyu2er",email:"zongyanqi@foxmail.com",commits:1}]},readingTime:{minutes:.04,words:12},copyright:"\u8457\u4F5C\u6743\u5F52\u6240\u6709",filePathRelative:"msis/README.md"};export{e as data};

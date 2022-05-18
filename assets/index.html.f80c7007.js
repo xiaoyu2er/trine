@@ -1,0 +1,1 @@
+const t={key:"v-18b795e6",path:"/tag/%E7%94%B3%E8%AF%B7/",title:"\u7533\u8BF7 \u6807\u7B7E",lang:"zh-CN",frontmatter:{title:"\u7533\u8BF7 \u6807\u7B7E",blog:{type:"category",name:"\u7533\u8BF7",key:"tag"},layout:"Blog"},excerpt:"",headers:[],git:{},readingTime:{minutes:0,words:0},copyright:"\u8457\u4F5C\u6743\u5F52\u6240\u6709",filePathRelative:null};export{t as data};
