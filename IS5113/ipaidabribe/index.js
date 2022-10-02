@@ -5,19 +5,16 @@ const fs = require("fs");
 function main() {
   const pageUrl = "http://www.ipaidabribe.com/reports/paid";
   const items = [];
+  // request
   const c = new Crawler({
     maxConnections: 2,
-    // This will be called for each crawled page
     callback: (error, res, done) => {
       if (error) {
         console.log(error);
       } else {
         const $ = res.$;
-        // $ is Cheerio by default
-        //a lean implementation of core jQuery designed specifically for the server
         console.log(res.request.uri.href);
         $("section.ref-module-paid-bribe").each(function (i, elem) {
-          // console.log($(this).text().trim());
           const $this = $(this);
           const a = $this.find("h3 a");
           const href = a.attr("href");
@@ -37,7 +34,6 @@ function main() {
             .trim();
           const views = $this.find(".views").text().replace("views", "").trim();
           items.push({
-            // href,
             title,
             amount,
             department,
@@ -59,6 +55,7 @@ function main() {
       .map((i) => `${pageUrl}?page=${i}`)
   );
 
+  // store
   c.on("drain", () => {
     console.log("length", items.length);
     stringify(
